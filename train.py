@@ -54,7 +54,6 @@ def evaluate(model, dataloader, criterion):
         for src, trg, _, _ in progress_bar:
             src, trg = src.to(DEVICE), trg.to(DEVICE)
             output = model(src, trg, teacher_forcing_ratio=0.0)
-
             output_dim = output.shape[-1]
             output = output[:, 1:].reshape(-1, output_dim)
             trg = trg[:, 1:].reshape(-1)
@@ -72,35 +71,38 @@ def evaluate(model, dataloader, criterion):
 def main():
     train_path = "datasets/dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.train.tsv"
     dev_path = "datasets/dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.dev.tsv"
+    test_path = "datasets/dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.test.tsv"
 
     train_dataset = DakshinaDataset(train_path)
     input_vocab = train_dataset.input_vocab
     output_vocab = train_dataset.output_vocab
 
     dev_dataset = DakshinaDataset(dev_path, input_vocab=input_vocab, output_vocab=output_vocab)
+    test_dataset = DakshinaDataset(test_path, input_vocab=input_vocab, output_vocab=output_vocab)
 
     train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True, collate_fn=collate_fn)
     dev_loader = DataLoader(dev_dataset, batch_size=256, shuffle=False, collate_fn=collate_fn)
+    test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, collate_fn=collate_fn)
 
     input_vocab_size = len(train_dataset.input_vocab)
     output_vocab_size = len(train_dataset.output_vocab)
 
-    encoder = Encoder(input_vocab_size, embed_dim=256, hidden_dim=512, num_layers=4, rnn_type='LSTM')
-    decoder = Decoder(output_vocab_size, embed_dim=256, hidden_dim=512, num_layers=4, rnn_type='LSTM')
+    encoder = Encoder(input_vocab_size, embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
+    decoder = Decoder(output_vocab_size, embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
     model = Seq2Seq(encoder, decoder, rnn_type='LSTM').to(DEVICE)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     criterion = nn.CrossEntropyLoss(ignore_index=0)
 
-    N_EPOCHS = 50
-    CLIP = 2
+    N_EPOCHS = 20
+    CLIP = 1
 
     for epoch in range(N_EPOCHS):
 
-        if epoch < 10:
-            tf_ratio = 0.9
+        if epoch < 5:
+            tf_ratio = 1
         else:
-            tf_ratio = 0.05
+            tf_ratio = 0
         logging.info(f"Epoch {epoch+1}/{N_EPOCHS} | Teacher Forcing Ratio: {tf_ratio}")
         train_loss, train_accuracy = train_one_epoch(model, train_loader, optimizer, criterion, CLIP, tf_ratio)
         print("=" * os.get_terminal_size().columns)
@@ -108,6 +110,7 @@ def main():
 
         logging.info(f"Train Loss: {train_loss:.4f}, Train Accuracy: {train_accuracy:.4f}, Dev Loss: {dev_loss:.4f}, Dev Accuracy: {dev_accuracy:.4f}")
 
+    test_loss, test_accuracy = evaluate(model, test_loader, criterion)
     # Save the model and vocabularies
     os.makedirs("saved", exist_ok=True)
     torch.save(model.state_dict(), "saved/seq2seq_model.pt")

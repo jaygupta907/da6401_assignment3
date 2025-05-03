@@ -9,8 +9,8 @@ from dataset import CharVocab
 input_vocab = CharVocab.load("saved/input_vocab.pt")
 output_vocab = CharVocab.load("saved/output_vocab.pt")
 
-encoder = Encoder(len(input_vocab), embed_dim=256, hidden_dim=512, num_layers=4, rnn_type='LSTM')
-decoder = Decoder(len(output_vocab), embed_dim=256, hidden_dim=512, num_layers=4, rnn_type='LSTM')
+encoder = Encoder(len(input_vocab), embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
+decoder = Decoder(len(output_vocab), embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
 model = Seq2Seq(encoder, decoder, rnn_type='LSTM').to(DEVICE)
 
 model.load_state_dict(torch.load("saved/seq2seq_model.pt", map_location=DEVICE))
@@ -20,7 +20,8 @@ def translate_word(word):
     input_tensor = input_vocab.tensor_from_text(word).to(DEVICE)
 
     with torch.no_grad():
-        output_word = model.translate(input_tensor,output_vocab, max_len=30)
+        output= model.translate(input_tensor,output_vocab, max_len=30)
+        output_word = output_vocab.decode(output)
         
     return output_word
 
