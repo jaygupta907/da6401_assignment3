@@ -13,8 +13,8 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 input_vocab = CharVocab.load("saved/input_vocab.pt")
 output_vocab = CharVocab.load("saved/output_vocab.pt")
 
-encoder = Encoder(len(input_vocab), embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
-decoder = Decoder(len(output_vocab), embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM', use_attention=True, encoder_output_dim=1024)
+encoder = Encoder(len(input_vocab), embed_dim=512, hidden_dim=512, num_layers=2, rnn_type='LSTM')
+decoder = Decoder(len(output_vocab), embed_dim=512, hidden_dim=512, num_layers=2, rnn_type='LSTM', use_attention=True, encoder_output_dim=1024)
 model = Seq2Seq(encoder, decoder, rnn_type='LSTM').to(DEVICE)
 model.load_state_dict(torch.load("saved/seq2seq_model_attention.pt", map_location=DEVICE))
 model.eval()
@@ -104,7 +104,7 @@ async def translate(word: str):
         decoded_input = [c for c in decoded_input if c not in ['<sos>', '<eos>']]
         decoded_output = [c for c in decoded_output if c not in ['<sos>', '<eos>']]
 
-        attention_weights = np.array(attention_weights).squeeze(1)[:-1,1:-1]
+        attention_weights = np.array(attention_weights).squeeze(1)[:,2:]
         js_attention = [
             [round(w, 3) for w in attention_weights[i].tolist()]
             for i in range(len(decoded_output))
