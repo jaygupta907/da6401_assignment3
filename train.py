@@ -88,7 +88,7 @@ def main():
     output_vocab_size = len(train_dataset.output_vocab)
 
     encoder = Encoder(input_vocab_size, embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
-    decoder = Decoder(output_vocab_size, embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM')
+    decoder = Decoder(output_vocab_size, embed_dim=512, hidden_dim=512, num_layers=4, rnn_type='LSTM',use_attention=True,encoder_output_dim=1024)
     model = Seq2Seq(encoder, decoder, rnn_type='LSTM').to(DEVICE)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
@@ -113,7 +113,7 @@ def main():
     test_loss, test_accuracy = evaluate(model, test_loader, criterion)
     # Save the model and vocabularies
     os.makedirs("saved", exist_ok=True)
-    torch.save(model.state_dict(), "saved/seq2seq_model.pt")
+    torch.save(model.state_dict(), "saved/seq2seq_model_attention.pt")
     torch.save(train_dataset.input_vocab.__dict__, "saved/input_vocab.pt")
     torch.save(train_dataset.output_vocab.__dict__, "saved/output_vocab.pt")
 
