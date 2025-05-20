@@ -124,7 +124,7 @@ async def translate(word: str):
 
         attention_weights = np.array(attention_weights).squeeze(1)[:,2:]
         js_attention = [
-            [round(w, 4) for w in attention_weights[i].tolist()]
+            [w for w in attention_weights[i].tolist()]
             for i in range(len(decoded_output))
         ]
 
