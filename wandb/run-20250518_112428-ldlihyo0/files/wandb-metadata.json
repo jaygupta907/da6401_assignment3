@@ -1,0 +1,174 @@
+{
+    "os": "Linux-6.8.0-59-generic-x86_64-with-glibc2.35",
+    "python": "CPython 3.10.16",
+    "heartbeatAt": "2025-05-18T18:24:28.737449",
+    "startedAt": "2025-05-18T18:24:28.530782",
+    "docker": null,
+    "args": [
+        "service",
+        "--debug",
+        "--port-filename",
+        "/tmp/tmp45j1g70r/port-209880.txt",
+        "--pid",
+        "209880"
+    ],
+    "state": "running",
+    "program": "/home/jay/da6401_assignment3/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/jaygupta907/da6401_assignment3.git",
+        "commit": "ccbb85cfb8f61bb1331f90a8d46d34d118c9e324"
+    },
+    "email": "ae21b026@smail.iitm.ac.in",
+    "root": "/home/jay/da6401_assignment3",
+    "host": "rafalkocielnik-System-Product-Name",
+    "username": null,
+    "executable": "/home/jay/miniconda3/envs/Sequence/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3282.5564166666663,
+        "min": 400.0,
+        "max": 5733.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 5475.264,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2870.84,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3334.663,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3217.498,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2857.272,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2972.068,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2652.017,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2734.223,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 5733.0,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 5010.861,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3332.769,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2855.387,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 3004.644,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2858.66,
+            "min": 400.0,
+            "max": 5733.0
+        },
+        {
+            "current": 2854.429,
+            "min": 400.0,
+            "max": 5733.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 3936290357248,
+            "used": 3305367072768
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 66592837632
+    }
+}

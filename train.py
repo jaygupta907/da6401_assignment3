@@ -78,8 +78,12 @@ def main():
     args = get_args()
 
 
-    wandb.init(project=args.wandb_project, entity=args.wandb_entity)
-    wandb.config.update(args)
+    experiment_name = f"cell_{args.cell_type}_input_{args.input_embedding}_hidden_{args.hidden_layer_size}_encoder_{args.encoder_layers}_decoder_{args.decoder_layers}_lr_{args.learning_rate}_dropout_{args.dropout}_batch_{args.batch_size}"
+    wandb.init(project=args.wandb_project,
+                entity=args.wandb_entity,
+                config=args,
+                name=experiment_name
+    )
 
 
     train_path = "datasets/dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.train.tsv"
@@ -95,7 +99,6 @@ def main():
 
     train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn)
     dev_loader = DataLoader(dev_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
-    test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
 
     input_vocab_size = len(train_dataset.input_vocab)
     output_vocab_size = len(train_dataset.output_vocab)
@@ -135,10 +138,10 @@ def main():
 
 
     # Save the model and vocabularies
-    # os.makedirs("saved", exist_ok=True)
-    # torch.save(model.state_dict(), "saved/seq2seq_model_attention.pt")
-    # torch.save(train_dataset.input_vocab.__dict__, "saved/input_vocab.pt")
-    # torch.save(train_dataset.output_vocab.__dict__, "saved/output_vocab.pt")
+    os.makedirs("saved", exist_ok=True)
+    torch.save(model.state_dict(), "saved/seq2seq_model_vanilla.pt")
+    torch.save(train_dataset.input_vocab.__dict__, "saved/input_vocab.pt")
+    torch.save(train_dataset.output_vocab.__dict__, "saved/output_vocab.pt")
 
 if __name__ == '__main__':
     main()

@@ -4,6 +4,9 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from model import Encoder, Decoder, Seq2Seq
 from dataset import CharVocab
+from config import get_args
+
+args  = get_args()
 
 app = FastAPI()
 
@@ -13,9 +16,23 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 input_vocab = CharVocab.load("saved/input_vocab.pt")
 output_vocab = CharVocab.load("saved/output_vocab.pt")
 
-encoder = Encoder(len(input_vocab), embed_dim=512, hidden_dim=512, num_layers=2, rnn_type='LSTM')
-decoder = Decoder(len(output_vocab), embed_dim=512, hidden_dim=512, num_layers=2, rnn_type='LSTM', use_attention=True, encoder_output_dim=1024)
-model = Seq2Seq(encoder, decoder, rnn_type='LSTM').to(DEVICE)
+encoder = Encoder(len(input_vocab), 
+                    embed_dim=args.input_embedding,
+                    hidden_dim=args.hidden_layer_size,
+                    num_layers=args.encoder_layers, 
+                    rnn_type=args.cell_type,
+                    bidirectional=args.encoder_bidirectional, 
+                    dropout=args.dropout)
+decoder = Decoder(len(output_vocab), 
+                      embed_dim=args.input_embedding, 
+                      hidden_dim=args.hidden_layer_size, 
+                      num_layers=args.decoder_layers, 
+                      rnn_type=args.cell_type,
+                      bidirectional=args.decoder_bidirectional,
+                      dropout=args.dropout,
+                      use_attention=args.use_attention,
+                      encoder_output_dim=args.hidden_layer_size * 2 if args.encoder_bidirectional else args.hidden_layer_size)
+model = Seq2Seq(encoder, decoder, rnn_type=args.cell_type).to(DEVICE)
 model.load_state_dict(torch.load("saved/seq2seq_model_attention.pt", map_location=DEVICE))
 model.eval()
 
@@ -104,9 +121,10 @@ async def translate(word: str):
         decoded_input = [c for c in decoded_input if c not in ['<sos>', '<eos>']]
         decoded_output = [c for c in decoded_output if c not in ['<sos>', '<eos>']]
 
+
         attention_weights = np.array(attention_weights).squeeze(1)[:,2:]
         js_attention = [
-            [round(w, 3) for w in attention_weights[i].tolist()]
+            [round(w, 4) for w in attention_weights[i].tolist()]
             for i in range(len(decoded_output))
         ]
 

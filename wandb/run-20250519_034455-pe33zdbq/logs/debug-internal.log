@@ -1,0 +1,195 @@
+2025-05-19 03:44:55,325 INFO    StreamThr :692258 [internal.py:wandb_internal():83] W&B internal server running at pid: 692258, started at: 2025-05-19 03:44:55.325010
+2025-05-19 03:44:55,327 INFO    WriterThread:692258 [datastore.py:open_for_write():87] open: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/run-pe33zdbq.wandb
+2025-05-19 03:44:55,527 INFO    SenderThread:692258 [dir_watcher.py:__init__():211] watching files in: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files
+2025-05-19 03:44:55,527 INFO    SenderThread:692258 [sender.py:_start_run_threads():1134] run started: pe33zdbq with start time 1747651495.324152
+2025-05-19 03:44:55,535 INFO    HandlerThread:692258 [system_monitor.py:start():187] Starting system monitor
+2025-05-19 03:44:55,535 INFO    SystemMonitor:692258 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-05-19 03:44:55,535 INFO    HandlerThread:692258 [system_monitor.py:probe():207] Collecting system info
+2025-05-19 03:44:55,535 INFO    SystemMonitor:692258 [interfaces.py:start():186] Started cpu monitoring
+2025-05-19 03:44:55,536 INFO    SystemMonitor:692258 [interfaces.py:start():186] Started disk monitoring
+2025-05-19 03:44:55,536 INFO    SystemMonitor:692258 [interfaces.py:start():186] Started gpu monitoring
+2025-05-19 03:44:55,536 INFO    SystemMonitor:692258 [interfaces.py:start():186] Started memory monitoring
+2025-05-19 03:44:55,536 INFO    SystemMonitor:692258 [interfaces.py:start():186] Started network monitoring
+2025-05-19 03:44:55,548 INFO    HandlerThread:692258 [system_monitor.py:probe():217] Finished collecting system info
+2025-05-19 03:44:55,548 INFO    HandlerThread:692258 [system_monitor.py:probe():220] Publishing system info
+2025-05-19 03:44:56,528 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/conda-environment.yaml
+2025-05-19 03:44:58,717 INFO    HandlerThread:692258 [system_monitor.py:probe():222] Finished publishing system info
+2025-05-19 03:44:58,718 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2025-05-19 03:44:59,056 INFO    wandb-upload_0:692258 [upload_job.py:push():130] Uploaded file /tmp/tmp3rc_ghv4wandb/h5s19oth-wandb-metadata.json
+2025-05-19 03:44:59,528 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/conda-environment.yaml
+2025-05-19 03:44:59,528 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/requirements.txt
+2025-05-19 03:44:59,528 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-metadata.json
+2025-05-19 03:45:00,528 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:02,529 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:04,529 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:06,529 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:08,530 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:08,814 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:08,970 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:09,530 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_created():272] file/dir created: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:45:10,530 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:11,531 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:12,531 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:14,531 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:16,532 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:18,532 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:18,951 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:19,136 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:19,532 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:45:20,533 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:21,533 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:22,534 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:24,534 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:25,534 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/config.yaml
+2025-05-19 03:45:26,535 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:28,535 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:29,161 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:29,327 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:29,535 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:45:30,535 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:31,536 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:32,536 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:34,536 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:36,537 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:38,537 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:39,228 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:39,413 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:39,538 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:45:40,538 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:41,538 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:42,538 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:44,539 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:46,539 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:48,540 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:49,311 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:49,495 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:49,544 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:45:50,544 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:51,545 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:52,545 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:54,545 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:56,546 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:58,546 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:45:58,746 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:58,976 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:45:59,546 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:00,547 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:01,547 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:02,547 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:04,548 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:06,548 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:08,548 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:08,740 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:08,932 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:09,549 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:10,549 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:11,549 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:12,549 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:14,550 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:16,550 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:18,123 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:18,294 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:18,553 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:18,554 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:19,554 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:20,554 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:22,554 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:24,555 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:26,555 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:28,191 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:28,380 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:28,556 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:28,556 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:29,556 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:30,556 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:32,557 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:34,557 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:36,557 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:37,651 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:37,839 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:38,558 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:38,558 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:38,759 INFO    SenderThread:692258 [sender.py:send_exit():554] handling exit code: 0
+2025-05-19 03:46:38,759 INFO    SenderThread:692258 [sender.py:send_exit():556] handling runtime: 103
+2025-05-19 03:46:38,759 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:38,759 INFO    SenderThread:692258 [sender.py:send_exit():562] send defer
+2025-05-19 03:46:38,759 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 0
+2025-05-19 03:46:38,759 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 0
+2025-05-19 03:46:38,759 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 1
+2025-05-19 03:46:38,760 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 1
+2025-05-19 03:46:38,760 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 1
+2025-05-19 03:46:38,760 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 2
+2025-05-19 03:46:38,760 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 2
+2025-05-19 03:46:38,760 INFO    HandlerThread:692258 [system_monitor.py:finish():196] Stopping system monitor
+2025-05-19 03:46:38,760 INFO    HandlerThread:692258 [interfaces.py:finish():198] Joined cpu monitor
+2025-05-19 03:46:38,760 INFO    HandlerThread:692258 [interfaces.py:finish():198] Joined disk monitor
+2025-05-19 03:46:38,823 INFO    HandlerThread:692258 [interfaces.py:finish():198] Joined gpu monitor
+2025-05-19 03:46:38,823 INFO    HandlerThread:692258 [interfaces.py:finish():198] Joined memory monitor
+2025-05-19 03:46:38,823 INFO    HandlerThread:692258 [interfaces.py:finish():198] Joined network monitor
+2025-05-19 03:46:38,823 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 2
+2025-05-19 03:46:38,823 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 3
+2025-05-19 03:46:38,824 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 3
+2025-05-19 03:46:38,824 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 3
+2025-05-19 03:46:38,824 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 4
+2025-05-19 03:46:38,824 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 4
+2025-05-19 03:46:38,824 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 4
+2025-05-19 03:46:38,824 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 5
+2025-05-19 03:46:38,824 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 5
+2025-05-19 03:46:38,825 INFO    SenderThread:692258 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-05-19 03:46:38,825 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 5
+2025-05-19 03:46:38,825 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 6
+2025-05-19 03:46:38,825 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 6
+2025-05-19 03:46:38,825 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 6
+2025-05-19 03:46:38,825 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 7
+2025-05-19 03:46:38,825 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 7
+2025-05-19 03:46:38,825 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 7
+2025-05-19 03:46:39,558 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:39,558 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:40,558 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:40,927 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 8
+2025-05-19 03:46:40,927 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 8
+2025-05-19 03:46:40,927 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 8
+2025-05-19 03:46:40,927 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 9
+2025-05-19 03:46:40,927 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 9
+2025-05-19 03:46:40,928 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 9
+2025-05-19 03:46:40,928 INFO    SenderThread:692258 [dir_watcher.py:finish():359] shutting down directory watcher
+2025-05-19 03:46:41,559 INFO    Thread-12 :692258 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:41,559 INFO    SenderThread:692258 [dir_watcher.py:finish():389] scan: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files
+2025-05-19 03:46:41,559 INFO    SenderThread:692258 [dir_watcher.py:finish():403] scan save: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-metadata.json wandb-metadata.json
+2025-05-19 03:46:41,559 INFO    SenderThread:692258 [dir_watcher.py:finish():403] scan save: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log output.log
+2025-05-19 03:46:41,559 INFO    SenderThread:692258 [dir_watcher.py:finish():403] scan save: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/config.yaml config.yaml
+2025-05-19 03:46:41,559 INFO    SenderThread:692258 [dir_watcher.py:finish():403] scan save: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/requirements.txt requirements.txt
+2025-05-19 03:46:41,561 INFO    SenderThread:692258 [dir_watcher.py:finish():403] scan save: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json wandb-summary.json
+2025-05-19 03:46:41,563 INFO    SenderThread:692258 [dir_watcher.py:finish():403] scan save: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/conda-environment.yaml conda-environment.yaml
+2025-05-19 03:46:41,564 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 10
+2025-05-19 03:46:41,564 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 10
+2025-05-19 03:46:41,566 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 10
+2025-05-19 03:46:41,567 INFO    SenderThread:692258 [file_pusher.py:finish():169] shutting down file pusher
+2025-05-19 03:46:41,838 INFO    wandb-upload_1:692258 [upload_job.py:push():130] Uploaded file /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/config.yaml
+2025-05-19 03:46:41,866 INFO    wandb-upload_0:692258 [upload_job.py:push():130] Uploaded file /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/output.log
+2025-05-19 03:46:41,870 INFO    wandb-upload_3:692258 [upload_job.py:push():130] Uploaded file /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/wandb-summary.json
+2025-05-19 03:46:41,912 INFO    wandb-upload_2:692258 [upload_job.py:push():130] Uploaded file /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/requirements.txt
+2025-05-19 03:46:41,916 INFO    wandb-upload_4:692258 [upload_job.py:push():130] Uploaded file /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/files/conda-environment.yaml
+2025-05-19 03:46:42,117 INFO    Thread-11 (_thread_body):692258 [sender.py:transition_state():582] send defer: 11
+2025-05-19 03:46:42,117 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 11
+2025-05-19 03:46:42,117 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 11
+2025-05-19 03:46:42,117 INFO    SenderThread:692258 [file_pusher.py:join():175] waiting for file pusher
+2025-05-19 03:46:42,117 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 12
+2025-05-19 03:46:42,117 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 12
+2025-05-19 03:46:42,118 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 12
+2025-05-19 03:46:42,118 INFO    SenderThread:692258 [file_stream.py:finish():601] file stream finish called
+2025-05-19 03:46:42,409 INFO    SenderThread:692258 [file_stream.py:finish():605] file stream finish is done
+2025-05-19 03:46:42,409 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 13
+2025-05-19 03:46:42,409 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 13
+2025-05-19 03:46:42,410 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 13
+2025-05-19 03:46:42,410 INFO    SenderThread:692258 [sender.py:transition_state():582] send defer: 14
+2025-05-19 03:46:42,410 INFO    HandlerThread:692258 [handler.py:handle_request_defer():188] handle defer: 14
+2025-05-19 03:46:42,410 INFO    SenderThread:692258 [sender.py:send_request_defer():578] handle sender defer: 14
+2025-05-19 03:46:42,412 INFO    MainThread:692258 [wandb_run.py:_footer_history_summary_info():4188] rendering history
+2025-05-19 03:46:42,412 INFO    MainThread:692258 [wandb_run.py:_footer_history_summary_info():4220] rendering summary
+2025-05-19 03:46:42,412 INFO    MainThread:692258 [wandb_run.py:_footer_sync_info():4149] logging synced files
+2025-05-19 03:46:42,412 INFO    HandlerThread:692258 [handler.py:finish():897] shutting down handler
+2025-05-19 03:46:43,411 INFO    WriterThread:692258 [datastore.py:close():296] close: /home/jay/da6401_assignment3/wandb/run-20250519_034455-pe33zdbq/run-pe33zdbq.wandb
+2025-05-19 03:46:43,411 INFO    SenderThread:692258 [sender.py:finish():1587] shutting down sender
+2025-05-19 03:46:43,411 INFO    SenderThread:692258 [file_pusher.py:finish():169] shutting down file pusher
+2025-05-19 03:46:43,411 INFO    SenderThread:692258 [file_pusher.py:join():175] waiting for file pusher

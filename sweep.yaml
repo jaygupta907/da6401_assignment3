@@ -1,4 +1,4 @@
-name: Transliteration_Sweep
+name: Transliteration_Sweep_attention
 project: Transliteration
 entity: jay_gupta-indian-institute-of-technology-madras
 program: train.py
@@ -9,16 +9,16 @@ metric:
 parameters:
   batch_size:
     values: [64,128,256]
-  input_embedding::
+  input_embedding:
     values: [64,128,256,512]
-  hiddeN_layer_size:
+  hidden_layer_size:
     values: [64,128,256,512]
   encoder_layers:
     values: [1,2,3,4]
   decoder_layers:
     values: [1,2,3,4]
-  dropout_prob:
-    values: [0.1,0.2, 0.3]
+  dropout:
+    values: [0.1,0.2,0.3,0.4]
   learning_rate:
     values: [0.001, 0.0001]
   cell_type:
