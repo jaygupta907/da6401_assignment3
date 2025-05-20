@@ -1,0 +1,36 @@
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
+/home/jay/da6401_assignment3/plot_heatmap.py:67: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.tight_layout()
+/home/jay/da6401_assignment3/plot_heatmap.py:68: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Lohit Devanagari.
+  plt.savefig(buf, format='png')
