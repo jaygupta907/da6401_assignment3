@@ -1,2 +1,4 @@
 datasets/
 saved/
+wandb/
+__pycache__/
